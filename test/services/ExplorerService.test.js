@@ -7,7 +7,7 @@ describe("Unit test for User Reader",()=>{
         nodeExplorers = ExplorerService.filterByMission(explorers, "node")
         nodeAmount = ExplorerService.getAmountOfExplorersByMission(explorers, "node")
         nodeUsernames=ExplorerService.getExplorersUsernamesByMission(explorers, "node")
-        expect(nodeExplorers[0].name).toBe("Woopa1")
+        expect(nodeExplorers[0].name).toBe("Woopa5")
         expect(nodeAmount).toBe(10)
         expect(nodeUsernames[0]).toBe("ajolonauta1")
     })
