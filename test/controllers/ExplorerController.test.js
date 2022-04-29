@@ -1,13 +1,12 @@
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
-const Reader = require("./../../lib/controllers/ExplorerController");
 
-describe("Unit test for User Re",()=>{
+describe("Unit test ExplorarController Class",()=>{
     test("evaluate getExplorersAmountByMission method",()=>{
         const nodeAmount = ExplorerController.getExplorersAmountByMission("node");
         expect(nodeAmount).toBe(10);
     });
     test("evaluate filterByMission method",()=>{
-        const nodeExplorers = ExplorerController.filterByMission("node");
+        const nodeExplorers = ExplorerController.getExplorersByMission("node");
         expect(nodeExplorers[0].name).toBe("Woopa1");
     });
     test("evaluate getExplorersUsernamesByMission method",()=>{
