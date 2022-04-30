@@ -13,4 +13,8 @@ describe("Unit test ExplorarController Class",()=>{
         const nodeUsernames = ExplorerController.getExplorersUsernamesByMission("node");
         expect(nodeUsernames[0]).toBe("ajolonauta1");
     });
+    test("evaluate applyValidationNumber method",()=>{
+        const fizz = ExplorerController.getValidationInNumber(1)
+        expect(nodeUsernames[0]).toBe(1);
+    });
 });
